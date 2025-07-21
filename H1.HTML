@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neon Weather App</title>
+  <link rel="stylesheet" href="H1.CSS" />
+</head>
+<body>
+  <div class="weather-app">
+    <header>
+      <h1>☁️ Weather Pulse</h1>
+      <input type="text" id="cityInput" placeholder="Enter city..." />
+      <button id="searchBtn">Search</button>
+    </header>
+
+    <section class="weather-info">
+      <h2 id="cityName">City Name</h2>
+      <div class="weather-main">
+<div class="weather-main">
+  <img id="weatherIcon" style="display: none;" alt="" />
+
+  <div class="temp" id="temperature">--°C</div>
+  <div class="condition" id="condition">--</div>
+</div>
+ 
+      </div>
+      <div class="details">
+        <p>Humidity: <span id="humidity">--%</span></p>
+        <p>Wind: <span id="wind">-- km/h</span></p>
+      </div>
+    </section>
+    <section class="forecast">
+  <h2>5-Day Forecast</h2>
+  <div id="forecastContainer" class="forecast-grid"></div>
+</section>
+
+
+    <!-- <footer>
+      <p>Powered by OpenWeatherMap</p>
+    </footer> -->
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script src="H1.JS"></script> 
+</body>
+</html>

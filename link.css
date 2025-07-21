@@ -1,0 +1,96 @@
+
+#vanta-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 60px;
+  text-shadow: 0 0 10px #00f0ff;
+  z-index: 1;
+  position: relative;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+  z-index: 1;
+  position: relative;
+  perspective: 1000px;
+}
+
+.project-card {
+  background: rgba(0, 255, 255, 0.05);
+  border: 1px solid #00f0ff33;
+  border-radius: 12px;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 0 20px #00f0ff22;
+  backdrop-filter: blur(10px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  text-align: center;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.05);
+  box-shadow: 0 0 40px #00f0ff88, 0 0 10px #00f0ff inset;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #00f0ff;
+  text-shadow: 0 0 5px #00f0ff88;
+}
+
+.project-desc {
+  font-size: 1rem;
+  color: #ffffffcc;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #00ffd5;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 0 #00c2a8;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #00c2a8;
+}
+
+#vanta-bg {
+  z-index: -2;
+}
+.project-grid, .project-card, h1 {
+  position: relative;
+  z-index: 1;
+}
+.btn {
+  pointer-events: auto;
+  z-index: 1;
+  position: relative;
+}
